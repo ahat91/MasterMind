@@ -33,7 +33,7 @@ public class PostBrainScore : MonoBehaviour {
 		Debug.Log (brainScoreS4);
 		Debug.Log (brainScoreS5);
 
-		brainScore = (brainScoreS2 + brainScoreS3 + brainScoreS4 + brainScoreS5) / 3;
+		brainScore = ((brainScoreS2 + brainScoreS3 + brainScoreS4 + brainScoreS5) / 3) * 100;
 
 		brainScoreTxt = brainScore.ToString ("F2");
 
