@@ -17,13 +17,13 @@ if ($numrows == 0)
 }
 else
 {
-	//$pass = md5($pass);
+	$pass = md5($pass);
 	while($row = mysql_fetch_assoc($check))
 	{
 		if ($pass == $row['password'])
 			die("login-SUCCESS");
 		else
-			die("Password does not match \n".$pass);
+			die("Password does not match \n");
 	}
 }
 
